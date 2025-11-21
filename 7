@@ -1,0 +1,7 @@
+For this development:
+
+To implement this correctly, we need to account for the PC scenario, one-to-many scenario, and ensure that none of these conflict with other form types. We also need to re-evaluate how Ravi’s request-type mismatch functionality works. Right now, the alignment for mismatched request types is already incorrect and requires updates. We have identified several issues so far, but we still need to analyze the full flow to confirm if anything else is missing.
+
+This entire process is tightly coupled with request-type matching, and the changes impact both Java and Angular. Because of that coupling, the analysis and development require additional time. Without fully understanding all these interactions, pushing partial code (even for use case 3) at this point could unintentionally break other areas.
+
+Since we are near the end of the sprint, would it be possible to convert this into a spike to complete the analysis now and move the actual development to the next sprint? This will help ensure we don’t introduce regressions while still making progress on understanding the impact.
